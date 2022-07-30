@@ -1,8 +1,10 @@
 # jogo da velha
 Jogo feito no console apenas por diversão e prática de programação
+
 Criador : VITOR ROBERTO GOMES QUEIROZ
 
 INSTRUÇÕES:
+
 JOGO NO CONSOLE FEITO EM PYTHON
 
 PARA O FUNCIONAMENTO CORRETO BAIXE A PASTA E CERTIFIQUE-SE QUE TODOS OS ITENS ESTEJAM DENTRO DA MESMA
