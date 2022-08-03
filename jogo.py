@@ -215,6 +215,7 @@ def press(key):
     if str(key) == "'f'":
         
         console.clear()
+        variaveis_globais.start = 0
         variaveis_globais.y = 20
         variaveis_globais.menu = True
         variaveis_globais.game = False
@@ -260,13 +261,14 @@ def press(key):
                 funçoes_gerais.cursor(variaveis_globais.x,variaveis_globais.y)
     
     if str(key) == "'r'":
-        variaveis_globais.jogo = [' ' for i in range(9)]
-        variaveis_globais.game = True
-        console.clear()
-        variaveis_globais.msg = ''
-        funçoes_gerais.mapa()
-        funçoes_gerais.cursor(variaveis_globais.x,variaveis_globais.y)
-        variaveis_globais.end_game = '  '
+        if variaveis_globais.game:
+            variaveis_globais.jogo = [' ' for i in range(9)]
+            variaveis_globais.game = True
+            console.clear()
+            variaveis_globais.msg = ''
+            funçoes_gerais.mapa()
+            funçoes_gerais.cursor(variaveis_globais.x,variaveis_globais.y)
+            variaveis_globais.end_game = '  '
     if str(key) == "Key.esc":
         console.clear()
         quit()
@@ -287,6 +289,7 @@ def press(key):
             if variaveis_globais.y/5 == 5:
         
                 console.clear()
+                variaveis_globais.menu = False
                 funçoes_especificas.history()
 
             if variaveis_globais.y/5 == 6:
